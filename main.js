@@ -1,15 +1,15 @@
-
 const contenedortarjetas = document.getElementById('cards')
-/*  console.log(contenedortarjetas) */
+
 
 let botones = document.getElementById('botones')
 let btnSig
 let btnAnt
 let btnPrim
 let btnUlt
-
+let presentacion = document.getElementById('presentacion')
 let cantListados = document.getElementById('cantListados')
-const cantPaginas = document.getElementById('cantPaginas')
+let cantPaginas = document.getElementById('cantPaginas')
+let headerpersonajes = document.getElementById('header-personajesId')
 
 const obtenerPersonajes = () => {
     fetch("https://rickandmortyapi.com/api/character")
@@ -49,8 +49,6 @@ const mostrarPersonajes = (datos, genero) => {
         btnUlt = `<button class="btn" data-url="https://rickandmortyapi.com/api/character/?page=${totalPaginas}&gender=${genero}">ultima Pagina </button>`
     }
     
-    /* botones.innerHTML=`hola` */
-
     botones.innerHTML = btnPrim+ " " + btnAnt + " " + btnSig + " " + btnUlt     
 
     let cantPag = datos.info.pages
@@ -62,7 +60,7 @@ const mostrarPersonajes = (datos, genero) => {
 }
 
 const verDescription = (personajeUrl) => {
-    /* var card = document.getElementById('card') */
+    
     contenedortarjetas.innerHTML = ""
     fetch(personajeUrl)
         .then(res => res.json())
@@ -79,6 +77,10 @@ const verDescription = (personajeUrl) => {
               </div>`
         });
         botones.style.display="none"
+        presentacion.style.display="none"
+        headerpersonajes.style.display="none"
+        cantPaginas.style.display="none"
+        
 }
 
 const volverInicio = () => {
@@ -108,13 +110,6 @@ botones.addEventListener('click', (e) => {
             })
     }
 })
-
-
-/* let filterCharacter = (filterParam, value) => {
-    fetch(`https://rickandmortyapi.com/api/character/?${filterParam}=${value}`)
-        .then(res => res.json())
-        .then(datos => mostrarPersonajes(datos))
-} */
 
 
 const selectGender = () => {

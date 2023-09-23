@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   /*  font-family: sans-serif; */
+    font-family: sans-serif;
+   font-size: 20px;
 }
 
 /* header */
@@ -12,7 +13,8 @@ body{
 }
 
 header{
-    background-color: rgb(49, 48, 48);
+    color: rgb(9, 7, 8);
+    background: linear-gradient(180deg,rgba(214, 6, 103, 0.647),#0c7c85);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,25 +27,34 @@ header .img-header {
     width: 50%;
 }
 
+
+.btn,.btnIni{
+    padding: 5px;
+    background-color: #35e7f3;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.botones, #cantPaginas{
+    background-color: rgb(49, 48, 48);
+    color: white;
+    
+}
+
 header .presentacion{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: rgb(49, 48, 48);
+   
     color: white;
     width: 50%;
-    /* align-items: center;
-    justify-content: center; */
+    
 }
-
-
-.presentacion .sinopsis{
-
-}
-.presentacion .sinopsis-info-protagonistas{
-
-}
-
 
 
 /* main  */
@@ -51,7 +62,7 @@ header .presentacion{
 .header-personajes {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    
     padding: 10px;
     background-color: rgb(49, 48, 48);
     color: white;
@@ -86,10 +97,11 @@ header .presentacion{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-image: url(imagenes/imag.rik.png);
+    /* background-image: url(imagenes/imag.rik.png); */
+    background-color: rgb(49, 48, 48);
+    background-size: cover;
     background-repeat: no-repeat;
-    
-
+    background-size: 100%;    
 }
 
 #cards .card{
@@ -140,3 +152,5 @@ footer{
     background: linear-gradient(180deg,rgba(214, 6, 103, 0.647),#0c7c85);
 
 }
+
+
