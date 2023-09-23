@@ -1,18 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+    
+    <!-- google font regular 400 Kumbh sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+
     <title>trabajo practico</title>
 </head>
+
 <body>
-<header>
-    <h1>proyecto</h1>
-    <footer>Gabriela Arce</footer>
-    
-</header>
+    <header>
+        <div class="img-header">
+            <img src="https://occ-0-1216-185.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABWT5HIl9YXE1ZG5Khq2rGPAsxwcnKPhqJMO3E2WiZBVNemNHAlH148400SKvcFoxJFZsxLBpOCb31CliGnE3RYbxVAyHf10wyEfqZHliqF0z.png?r=a6e" alt="" class="img-header">
+        </div>
+        <div class="presentacion">
+            <div class="sinopsis">
+                <h3>Sinopsis</h3>
+                <p class="sinopsis-info-">Rick, un científico alcohólico, secuestra a su influenciable nieto,
+                    Morty, para vivir peligrosas aventuras a través de nuestro cosmos y universos paralelos.</p>
+            </div>
+            <div class="sinopsis-info-protagonistas">
+                Protagonizada por:Justin Roiland,Chris Parnell,Spencer Grammer
+                Creada por:Dan Harmon,Justin Roiland
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        
+
+        <section class="personajes-listafdasfdsafdsdos">
+
+            <div class="header-personajes">
+                <div class="filtro">
+                    <p>Filtrar por género:</p>
+                    <select class="" id="cmbGenero" onchange="selectGender()">
+                        <option value="Todos">Total Personajes</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Desconocido">Desconocido</option>
+                    </select>
+                </div>
+
+                    
+                <div id="cantListados">
+                    <!-- <p>fdjaslkfñsd</p> -->        
+                </div>
+
+            </div>
+
+
+
+            <div class="contenedor-personajes" >
+                <div id="cards">
+                    <!--    <div class="card" id="card">
+                                <img src="${Character.image}" alt="">
+                                <h2>${Character.name}</h2>
+                                <button class="boton" id="volver" onclick=getCharacters()>Volver</button>
+                            </div> 
+                    -->
+                    
+                </div>
+
+                <div class="botones" id="botones"></div>
+                <div id="cantPaginas"></div>
+
+            </div>
+                
+
+                
+        </section>
+        
+    </main>
+  
+    <footer>
+        <div class="footer">
+            <p>Proyecto final de: <strong>Gabriela Arce</strong></p>
+            <p>Septiembre del 2023</p>
+        </div>
+
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__ ">
+                    <a href="/" id="footer__logo"><i class="fas fa-gem"></i>NEXT</a>
+                    <p class="website__rights">© NEXT 2020. All right reserved </p>
+                    <div class="social__icons">
+                        <a href="" class="social__icon--link" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social__icon--link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="" class="social__icon--link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="social__icon--link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="" class="social__icon--link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /*  font-family: sans-serif; */
+}
+
+/* header */
+body{
+    margin: 0;
+    background-color:white  ;
+}
+
+header{
+    background-color: rgb(49, 48, 48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .img-header {
+    height: auto;
+    width: 250px;
+    width: 50%;
+}
+
+header .presentacion{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    width: 50%;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+
+.presentacion .sinopsis{
+
+}
+.presentacion .sinopsis-info-protagonistas{
+
+}
+
+
+
+/* main  */
+
+.header-personajes {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    padding: 10px;
+    background-color: rgb(49, 48, 48);
+    color: white;
+}
+
+.filtro{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.cantListados{
+    width: 50%;
+}
+
+
+
+/* --Personajes listados */
+
+
+/* --Personajes listados-> header-personajes: filtro y total personajes */
+
+/* --Personajes listados-> contenedor-personajes: cards y botones */
+.contenedor-personajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(imagenes/imag.rik.png);
+    background-repeat: no-repeat;
+    
+
+}
+
+#cards .card{
+    width: 230px;
+    height: 350px; 
+    border: 2px solid #d2e054;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px ;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+#cards img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    
+}
+
+.boton{
+    display: inline;
+    margin-top: 12px;
+    height: 34px;
+    width: 115px;
+    border-radius: 5px;
+    font-size: 16px;
+    background: coral;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+footer{
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    font-family: cursive;
+    color: rgb(9, 7, 8);
+    font-size: 20px;
+    background: linear-gradient(180deg,rgba(214, 6, 103, 0.647),#0c7c85);
+
+}
